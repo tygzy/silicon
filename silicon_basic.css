@@ -50,6 +50,12 @@
     *.background code { color: var(--text-color); }
 }
 
+@media screen and (max-width: 500px) {
+    :root {
+        --section-width: 90%;
+    }
+}
+
 * {
     font-family: sans-serif, system-ui;
     color: var(--text-color);
@@ -80,6 +86,17 @@ a {
     text-decoration: underline;
     font-weight: 600;
     color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav a {
+
 }
 
 /* sections */
@@ -180,11 +197,6 @@ input[type='number'] {
     -moz-appearance: textfield;
 }
 
-textarea.no-resize { resize: none; }
-textarea.all-resize { resize: both; }
-textarea.ho-resize { resize: horizontal; }
-textarea.ve-resize { resize: vertical; }
-
 input[type='checkbox'], input[type='radio'] {
     margin: 0;
     -moz-appearance:none;
@@ -246,7 +258,7 @@ code {
     padding: 0.2em 0.4em;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    font-family: 'JetBrains Mono', monospace;
+    font-family: monospace;
     font-size: 0.8em;
     border-radius: 4px;
     tab-size: 4;
@@ -264,7 +276,7 @@ code.large {
 kbd {
     padding: 0.4em 0.6em;
     font-weight: 600;
-    font-family: monospace;
+    font-family:  monospace;
     font-size: 0.8em;
     border-radius: 4px;
 }
@@ -300,3 +312,8 @@ blockquote footer::before {
 *.left { text-align: left; }
 *.center { text-align: center; }
 *.right { text-align: right; }
+
+textarea.no-resize { resize: none; }
+textarea.all-resize { resize: both; }
+textarea.ho-resize { resize: horizontal; }
+textarea.ve-resize { resize: vertical; }

@@ -53,6 +53,12 @@
     *.background code { color: var(--text-color); }
 }
 
+@media screen and (max-width: 500px) {
+    :root {
+        --section-width: 90%;
+    }
+}
+
 * {
     font-family: 'Outfit', sans-serif, system-ui;
     color: var(--text-color);
@@ -83,6 +89,17 @@ a {
     text-decoration: underline;
     font-weight: 600;
     color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav a {
+
 }
 
 /* sections */
@@ -182,11 +199,6 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
     -moz-appearance: textfield;
 }
-
-textarea.no-resize { resize: none; }
-textarea.all-resize { resize: both; }
-textarea.ho-resize { resize: horizontal; }
-textarea.ve-resize { resize: vertical; }
 
 input[type='checkbox'], input[type='radio'] {
     margin: 0;
@@ -303,3 +315,8 @@ blockquote footer::before {
 *.left { text-align: left; }
 *.center { text-align: center; }
 *.right { text-align: right; }
+
+textarea.no-resize { resize: none; }
+textarea.all-resize { resize: both; }
+textarea.ho-resize { resize: horizontal; }
+textarea.ve-resize { resize: vertical; }
