@@ -6,6 +6,8 @@ This allows anyone to have a website with a modern design that works on desktop,
 tablet or mobile device without having to worry about design decisions, 
 but if you do want to be able to, you could.
 
+Visit https://silicon-css.com for a live preview of silicon on a website
+
 ## Speed 
 
 There are two versions of Silicon, a normal version and a basic version, 

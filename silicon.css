@@ -59,6 +59,12 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    :root {
+        --section-width: 70%;
+    }
+}
+
 * {
     font-family: 'Outfit', sans-serif, system-ui;
     color: var(--text-color);
@@ -106,6 +112,7 @@ nav a {
 
 section {
     width: var(--section-width);
+    max-width: var(--section-width);
     margin: 4rem auto;
 }
 
@@ -266,7 +273,7 @@ code {
     border-radius: 4px;
     tab-size: 4;
     unicode-bidi: embed;
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 code.large {

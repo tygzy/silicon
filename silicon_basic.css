@@ -56,8 +56,14 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    :root {
+        --section-width: 70%;
+    }
+}
+
 * {
-    font-family: sans-serif, system-ui;
+    font-family: system-ui, sans-serif;
     color: var(--text-color);
     box-sizing: border-box;
 }
@@ -103,6 +109,7 @@ nav a {
 
 section {
     width: var(--section-width);
+    max-width: var(--section-width);
     margin: 4rem auto;
 }
 
@@ -138,10 +145,10 @@ input, textarea, select, button {
     padding: 0.8em;
     border-radius: 4px;
     background: none;
-    border: var(--border-width) solid var(--text-color);
+    border: var(--border-width) solid var(--placeholder-color);
     outline: none;
     color: var(--text-color);
-    font-family: sans-serif, system-ui;
+    font-family: system-ui, sans-serif;
     box-sizing: border-box;
     font-size: 1rem;
 }
@@ -259,11 +266,10 @@ code {
     background-color: var(--secondary-color);
     color: var(--text-color);
     font-family: monospace;
-    font-size: 0.8em;
     border-radius: 4px;
     tab-size: 4;
     unicode-bidi: embed;
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 code.large {
@@ -276,8 +282,7 @@ code.large {
 kbd {
     padding: 0.4em 0.6em;
     font-weight: 600;
-    font-family:  monospace;
-    font-size: 0.8em;
+    font-family: monospace;
     border-radius: 4px;
 }
 
