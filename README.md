@@ -36,14 +36,7 @@ After downloading silicon, use this code snippet to use it:
 or for the basic version to only use system fonts for faster loading times
 
 ```html
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel='stylesheet' href='silicon_basic.min.css'/>
-        <!--    allows responsive design    -->
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-    </head>
-</html>
+<link rel='stylesheet' href='silicon_basic.min.css'/>
 ```
 
 The standard (non-minified) version is also included with css variables at the top of the file 
