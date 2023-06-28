@@ -46,13 +46,13 @@ SOFTWARE.
 		<meta name='twitter:site' content='@tygzytwo'>
 		<meta name='twitter:creator' content='@tygzytwo'>
 
-		<link rel='stylesheet' href='silicon.css'>
+		<link rel='stylesheet' href='silicon.min.css'>
 		<link rel='canonical' href='https://silicon-css.com'/>
 	</head>
 	<body>
 		<section>
 			<h1>silicon</h1>
-			<code>1.2.4</code>
+			<code>1.2.5</code>
 			<p>
 				<a href='https://github.com/tygzy/silicon' target='_blank'>github</a> /
 				<a href='/silicon.min.css' target='_blank'>download</a> -
@@ -63,11 +63,21 @@ SOFTWARE.
 				but you could use silicon purely with no classes, just tags such as <code>&lt;div&gt;</code>.
 				fonts are also included in the css file, so you don't need to link any.
 			</p>
+
 			<p>silicon also has a light and dark mode that switches with the clients operating systems preference</p>
+
+			<p class='card'>
+				<span class='notice'>important information</span>
+				there are 2 page layouts, <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code>,
+				an article is allowed to take up 50% of the screen width and a section is allowed 30%,
+				although this does not mean it will take up a portion of its container,
+				it will up a portion of the actual screen/viewport.
+			</p>
+
 			<h2>forms</h2>
 			<form>
 				<input type='text' placeholder='text input'>
-				<textarea placeholder='textarea'></textarea>
+				<textarea placeholder='textarea' class='ve-resize'></textarea>
 				<select>
 					<option disabled selected>select</option>
 					<option>option</option>
@@ -75,6 +85,10 @@ SOFTWARE.
 				<div>
 					<label for='input'>label</label>
 					<input type='text' id='input' placeholder='input with label'>
+				</div>
+				<div>
+					<label for='input_disabled'>disabled input</label>
+					<input type='text' id='input_disabled' placeholder='disabled input' disabled>
 				</div>
 				<div>
 					<label for='radio'>radio</label>
@@ -105,7 +119,6 @@ SOFTWARE.
 			<button disabled>disabled</button>
 			<button type='reset'>reset</button>
 
-			<hr>
 
 			<h2>table</h2>
 			<table>
@@ -125,17 +138,13 @@ SOFTWARE.
 					<td>td3</td>
 				</tr>
 			</table>
-			<br><br>
-			<hr>
 
-			<h1>header 1 &lt;h1&gt;</h1>
-			<h2>header 2 &lt;h2&gt;</h2>
-			<h3>header 3 &lt;h3&gt;</h3>
-			<h4>header 4 &lt;h4&gt;</h4>
-			<h5>header 5 &lt;h5&gt;</h5>
-			<h6>header 6 &lt;h6&gt;</h6>
-
-			<hr>
+			<h1>header 1 </h1>
+			<h2>header 2</h2>
+			<h3>header 3</h3>
+			<h4>header 4</h4>
+			<h5>header 5</h5>
+			<h6>header 6</h6>
 
 			<h2>inline tags</h2>
 
@@ -149,16 +158,9 @@ SOFTWARE.
 
 			<p>
 				<code>print('hello world')</code> you might want to embed a snippet of code.
-				you can also use <code>class='large'</code> to get a code snippet spanning multiple lines.
-				<code class="large">example here</code>
+				you can also use <code>&lt;code&gt;</code> inside a <code>&lt;pre&gt;</code> to get a code snippet spanning multiple lines.
 			</p>
-
-			<h4>hyperlink</h4>
-			<p>
-				<a href='.'>hyperlink</a>
-			</p>
-
-			<hr>
+			<pre><code>example here</code></pre>
 
 			<h2>lists</h2>
 
@@ -188,7 +190,6 @@ SOFTWARE.
 				</ol>
 			</ol>
 
-			<hr>
 
 			<h2>blockquote</h2>
 			<blockquote>
@@ -196,23 +197,31 @@ SOFTWARE.
 				<footer>author name, publication</footer>
 			</blockquote>
 
-			<hr>
+
+			<h2>details</h2>
+
+			<details>
+				<summary>details summary</summary>
+				<p>details content</p>
+			</details>
+
+
+			<h2>aside</h2>
+
+			<aside>
+				<p>some aside text</p>
+			</aside>
+
 
 			<h2>classes</h2>
 
 			<div>
-				<p class='card wide'>
-					a card with borders, could be used to separate content from something else. <br>
-					make this with <code>&lt;div class='card'&gt;</code>
-				</p>
-				<p class='background wide'>
-					a container element with an opposing background. <br>
-					make this with <code>&lt;div class='background'&gt;</code>
-				</p>
-				<p><code>&lt;div class='flex'&gt;</code> makes any element a flexbox with vertical and horizontal center alignment.</p>
-				<p><code>&lt;div class='wide'&gt;</code> makes any element 100% width relative to it's parent.</p>
-				<p><code>&lt;div class='left / center / right'&gt;</code> aligns any text to the left / center / right.</p>
-				<p><code>&lt;div class='no-resize / all-resize / ho-resize / ve-resize'&gt;</code> allows or disallows a textarea to be resized in specified directions.</p>
+				<p><code>&lt;* class='card'&gt;</code> a card with borders, could be used to separate content from something else.</p>
+				<p><code>&lt;* class='flex'&gt;</code> makes any element a flexbox with vertical and horizontal center alignment.</p>
+				<p><code>&lt;* class='wide'&gt;</code> makes any element 100% width relative to it's parent.</p>
+				<p><code>&lt;* class='left / center / right'&gt;</code> aligns any text to the left / center / right.</p>
+				<p><code>&lt;* class='no-resize / all-resize / ho-resize / ve-resize'&gt;</code> allows or disallows a textarea to be resized in specified directions.</p>
+				<p><code>&lt;* class='notice'&gt;</code> creates a focal point with uppercase text and center alignment.</p>
 			</div>
 		</section>
 		<section>
