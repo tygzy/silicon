@@ -22,12 +22,14 @@
 @media screen and (max-width: 1000px) {
     :root {
         --section-width: 70vw;
+        --article-width: 70vw;
     }
 }
 
 @media screen and (max-width: 500px) {
     :root {
         --section-width: 90vw;
+        --article-width: 90vw;
     }
 }
 
