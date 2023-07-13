@@ -36,7 +36,7 @@ SOFTWARE.
 		<meta property='og:type' content='website' />
 		<meta property='og:title' content='silicon' />
 		<meta property='og:description' content='Silicon CSS is a classless CSS framework, with responsive design, ability to customize and a light and dark theme.' />
-		<meta property='og:image' content='https://i.imgur.com/voK5c7C.png' />
+		<meta property='og:image' content='https://i.imgur.com/K1LrVZG.png' />
 		<meta property='og:url' content='https://silicon-css.com' />
 		<meta property='og:site_name' content='silicon css' />
 		<meta property='og:image:width' content='1200'>
@@ -44,7 +44,7 @@ SOFTWARE.
 
 		<meta name='twitter:title' content='silicon css'>
 		<meta name='twitter:description' content='Silicon CSS is a classless CSS framework, with responsive design, ability to customize and a light and dark theme.'>
-		<meta name='twitter:image' content='https://i.imgur.com/voK5c7C.png'>
+		<meta name='twitter:image' content='https://i.imgur.com/K1LrVZG.png'>
 		<meta name='twitter:site' content='@tygzytwo'>
 		<meta name='twitter:creator' content='@tygzytwo'>
 		<meta name='twitter:card' content='summary_large_image'>
@@ -56,9 +56,9 @@ SOFTWARE.
 	<body>
 		<article>
 			<h1>silicon</h1>
-			<code>1.2.0</code>
+			<code>1.2.1</code>
 
-			<h3>9.5kb classless CSS framework</h3>
+			<h3>10kb classless CSS framework</h3>
 			<p>
 				<a href='https://github.com/tygzy/silicon' target='_blank'>github</a> /
 				<a href='/silicon.min.css' target='_blank'>download</a> -
@@ -82,7 +82,7 @@ SOFTWARE.
 			</p>
 
 			<h2>forms</h2>
-			<form>
+			<form action='/'>
 				<input type='text' placeholder='text input'>
 				<textarea placeholder='textarea' class='ve-resize'></textarea>
 				<select>
@@ -99,7 +99,9 @@ SOFTWARE.
 				</div>
 				<div>
 					<label for='radio'>radio</label>
-					<input type='radio' id='radio'>
+					<input type='radio' id='radio' name='radio' value='radio'>
+					<label for='radio_2'>radio 2</label>
+					<input type='radio' id='radio_2' name='radio' value='radio_2'>
 				</div>
 				<div>
 					<label for='checkbox'>checkbox</label>
@@ -122,13 +124,20 @@ SOFTWARE.
 
 			<h4>buttons</h4>
 
-			<button type='button'>button</button>
-			<button disabled>disabled</button>
-			<button type='reset'>reset</button>
+			<p>
+				<button type='button'>button</button>
+				<button disabled>disabled</button>
+				<button type='reset'>reset</button>
+			</p>
+
+			<p>
+				<button type='button' class='small'>small button</button>
+			</p>
 
 
 			<h2>table</h2>
 			<table>
+				<caption>caption</caption>
 				<tr>
 					<th>th1</th>
 					<th>th2</th>
@@ -185,7 +194,7 @@ SOFTWARE.
 			</ul>
 
 			<h4>ordered list</h4>
-			<ol>
+			<ol class='no-align'>
 				<li>list item 1</li>
 				<li>list item 2</li>
 				<li>list item 3</li>
@@ -229,6 +238,7 @@ SOFTWARE.
 				<p><code>&lt;* class='left / center / right'&gt;</code> aligns any text to the left / center / right.</p>
 				<p><code>&lt;* class='no-resize / all-resize / ho-resize / ve-resize'&gt;</code> allows or disallows a textarea to be resized in specified directions.</p>
 				<p><code>&lt;* class='notice'&gt;</code> creates a focal point with uppercase text and center alignment.</p>
+				<p><code>&lt;button / input / textarea / select class='small'&gt;</code> gives less padding on these elements to make them smaller.</p>
 			</div>
 		</article>
 		<section>
