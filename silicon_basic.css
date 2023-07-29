@@ -1,4 +1,5 @@
-/* silicon v1.2.1 */
+/* silicon v1.2.2 */
+
 :root {
     --color-primary: #2c62af;
     --color-secondary-dark: #263342;
@@ -17,6 +18,7 @@
 
     --section-width: 50vw;
     --article-width: 30vw;
+    --main-width: 80vw;
     --gap: 15px;
     --border-width: 2px;
 }
@@ -25,6 +27,7 @@
     :root {
         --section-width: 70vw;
         --article-width: 60vw;
+        --main-width: 80vw;
     }
 }
 
@@ -32,11 +35,12 @@
     :root {
         --section-width: 90vw;
         --article-width: 90vw;
+        --main-width: 90vw;
     }
 }
 
 * {
-    font-family: system-ui, sans-serif;
+    font-family: sans-serif, system-ui;
     color: var(--color-text);
     box-sizing: border-box;
 }
@@ -63,6 +67,7 @@ h6 { font-size: 1.2em; }
 a {
     font-weight: 600;
     color: var(--color-primary);
+    text-decoration-thickness: var(--border-width);
 }
 
 nav {
@@ -77,6 +82,14 @@ nav {
 section {
     width: var(--section-width);
     max-width: var(--section-width);
+    margin: 4rem auto;
+}
+
+/* main */
+
+main {
+    width: var(--main-width);
+    max-width: var(--main-width);
     margin: 4rem auto;
 }
 
@@ -420,7 +433,7 @@ td, th { padding: 0.4em; text-align: left; }
 
 th { border-bottom: var(--border-width) solid var(--color-text); font-size: 1.2em; }
 
-tr:hover * {
+tr:hover *:not(th) {
     background-color: var(--color-grey);
 }
 
@@ -526,6 +539,14 @@ aside p {
 *.center { text-align: center; }
 *.right { text-align: right; }
 
+div.grid { display: grid; }
+div.grid.gap { gap: var(--gap); }
+div.grid.two { grid-template-columns: repeat(2, 1fr); }
+div.grid.three { grid-template-columns: repeat(3, 1fr); }
+div.grid.four { grid-template-columns: repeat(4, 1fr); }
+div.grid.five { grid-template-columns: repeat(5, 1fr); }
+
+
 textarea.no-resize { resize: none; }
 textarea.all-resize { resize: both; }
 textarea.ho-resize { resize: horizontal; }
@@ -566,7 +587,7 @@ button:disabled.small {
         --color-border: #0c0c0c;
         --color-grey: #1e2431;
         --color-dark-grey: #262b33;
-        --color-darker-grey: #4a5769;
+        --color-darker-grey: #5d6c7e;
     }
 
     kbd {
