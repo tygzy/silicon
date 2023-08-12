@@ -42,7 +42,7 @@ or for the basic version to only use system fonts for faster loading times
 The standard (non-minified) version is also included with css variables at the top of the file 
 to allow some core level customization to colours, border width and other things.
 
-![light theme example](https://i.imgur.com/HXDnRa4.png)
+![light theme example](https://i.imgur.com/87wDv2b.png)
 
-![dark theme example](https://i.imgur.com/8qCRzRc.png)
+![dark theme example](https://i.imgur.com/0K2vu4h.png)
 

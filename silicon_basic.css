@@ -1,4 +1,4 @@
-/* silicon v1.2.3 */
+/* silicon v1.2.4 */
 
 :root {
     --color-primary: #2c62af;
@@ -20,31 +20,33 @@
 
     --font-size: 1.07rem;
 
-    --section-width: 50vw;
-    --article-width: 30vw;
-    --main-width: 80vw;
+    --xs-width: 20vw;
+    --small-width: 30vw;
+    --medium-width: 50vw;
+    --large-width: 80vw;
+
     --gap: 15px;
     --border-width: 2px;
 }
 
 @media screen and (max-width: 1000px) {
     :root {
-        --section-width: 70vw;
-        --article-width: 60vw;
-        --main-width: 80vw;
+        --small-width: 60vw;
+        --medium-width: 70vw;
+        --large-width: 80vw;
     }
 }
 
 @media screen and (max-width: 500px) {
     :root {
-        --section-width: 90vw;
-        --article-width: 90vw;
-        --main-width: 90vw;
+        --medium-width: 90vw;
+        --small-width: 90vw;
+        --large-width: 90vw;
     }
 }
 
 * {
-    font-family: system-ui, sans-serif;
+    font-family: sans-serif, system-ui;
     color: var(--color-text);
     box-sizing: border-box;
 }
@@ -54,7 +56,9 @@ html {
 }
 
 body {
-    margin: 0;
+    min-width: var(--small-width);
+    width: min-content;
+    margin: auto;
 }
 
 /* headers */
@@ -85,27 +89,27 @@ nav {
     gap: 3rem;
 }
 
-/* sections */
-
-section {
-    width: var(--section-width);
-    max-width: var(--section-width);
+div.vp-xs {
+    width: var(--xs-width);
+    max-width: var(--xs-width);
     margin: 4rem auto;
 }
 
-/* main */
-
-main {
-    width: var(--main-width);
-    max-width: var(--main-width);
+div.vp-s {
+    width: var(--small-width);
+    max-width: var(--small-width);
     margin: 4rem auto;
 }
 
-/* articles */
+div.vp-m {
+    width: var(--medium-width);
+    max-width: var(--medium-width);
+    margin: 4rem auto;
+}
 
-article {
-    width: var(--article-width);
-    max-width: var(--article-width);
+div.vp-l {
+    width: var(--large-width);
+    max-width: var(--large-width);
     margin: 4rem auto;
 }
 
@@ -151,7 +155,7 @@ input, textarea, select, button {
     border: var(--border-width) solid var(--color-text);
     outline: none;
     color: var(--color-text);
-    font-family: system-ui, sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
     font-size: var(--font-size);
     caret-color: var(--color-primary);
@@ -333,7 +337,7 @@ input[type='file']:hover { cursor: pointer; }
     background: none;
     border-radius: 4px;
     padding: 4px 8px;
-    font-family: system-ui, sans-serif;
+    font-family: sans-serif, system-ui;
     margin-right: 10px;
     color: var(--color-text);
     font-size: var(--font-size);
@@ -344,7 +348,7 @@ input[type='file']:hover { cursor: pointer; }
     background: none;
     border-radius: 4px;
     padding: 4px 8px;
-    font-family: system-ui, sans-serif;
+    font-family: sans-serif, system-ui;
     margin-right: 10px;
     color: var(--color-text);
     font-size: var(--font-size);
@@ -355,7 +359,7 @@ input[type='file']:hover { cursor: pointer; }
     background: none;
     border-radius: 4px;
     padding: 4px 8px;
-    font-family: system-ui, sans-serif;
+    font-family: sans-serif, system-ui;
     margin-right: 10px;
     color: var(--color-text);
     font-size: var(--font-size);
