@@ -1,4 +1,4 @@
-/* silicon v1.2.4 */
+/* silicon v1.2.5 */
 
 :root {
     --color-primary: #2c62af;
@@ -31,6 +31,7 @@
 
 @media screen and (max-width: 1000px) {
     :root {
+        --xs-width: 40vw;
         --small-width: 60vw;
         --medium-width: 70vw;
         --large-width: 80vw;
@@ -39,6 +40,7 @@
 
 @media screen and (max-width: 500px) {
     :root {
+        --xs-width: 90vw;
         --medium-width: 90vw;
         --small-width: 90vw;
         --large-width: 90vw;
@@ -46,7 +48,7 @@
 }
 
 * {
-    font-family: sans-serif, system-ui;
+    font-family: sans-serif, system-ui, system-ui;
     color: var(--color-text);
     box-sizing: border-box;
 }
@@ -87,6 +89,10 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+footer {
+    margin: 3rem 0;
 }
 
 div.vp-xs {
@@ -155,7 +161,7 @@ input, textarea, select, button {
     border: var(--border-width) solid var(--color-text);
     outline: none;
     color: var(--color-text);
-    font-family: sans-serif;
+    font-family: sans-serif, system-ui;
     box-sizing: border-box;
     font-size: var(--font-size);
     caret-color: var(--color-primary);

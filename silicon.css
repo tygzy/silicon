@@ -1,4 +1,4 @@
-/* silicon v1.2.4 */
+/* silicon v1.2.5 */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap');
@@ -34,6 +34,7 @@
 
 @media screen and (max-width: 1000px) {
     :root {
+        --xs-width: 40vw;
         --small-width: 60vw;
         --medium-width: 70vw;
         --large-width: 80vw;
@@ -42,6 +43,7 @@
 
 @media screen and (max-width: 500px) {
     :root {
+        --xs-width: 90vw;
         --medium-width: 90vw;
         --small-width: 90vw;
         --large-width: 90vw;
@@ -90,6 +92,10 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+footer {
+    margin: 3rem 0;
 }
 
 div.vp-xs {

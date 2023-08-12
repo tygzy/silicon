@@ -36,7 +36,7 @@ SOFTWARE.
 		<meta property='og:type' content='website'>
 		<meta property='og:title' content='silicon'>
 		<meta property='og:description' content='Silicon CSS is a classless CSS framework, with responsive design, ability to customize and a light and dark theme.'>
-		<meta property='og:image' content='https://i.imgur.com/87wDv2b.png'>
+		<meta property='og:image' content='https://i.imgur.com/I7QQggb.png'>
 		<meta property='og:url' content='https://silicon-css.com'>
 		<meta property='og:site_name' content='silicon css'>
 		<meta property='og:image:width' content='1200'>
@@ -44,7 +44,7 @@ SOFTWARE.
 
 		<meta name='twitter:title' content='silicon css'>
 		<meta name='twitter:description' content='Silicon CSS is a classless CSS framework, with responsive design, ability to customize and a light and dark theme.'>
-		<meta name='twitter:image' content='https://i.imgur.com/87wDv2b.png'>
+		<meta name='twitter:image' content='https://i.imgur.com/I7QQggb.png'>
 		<meta name='twitter:site' content='@tygzytwo'>
 		<meta name='twitter:creator' content='@tygzytwo'>
 		<meta name='twitter:card' content='summary_large_image'>
@@ -57,14 +57,14 @@ SOFTWARE.
 		<link rel='icon' type='image/icon' sizes='32x32' href='ico_32_dark.ico' media='(prefers-color-scheme: dark)'>
 		<link rel='icon' type='image/icon' sizes='64x64' href='ico_64_dark.ico' media='(prefers-color-scheme: dark)'>
 
-		<link rel='stylesheet' href='silicon.css'>
+		<link rel='stylesheet' href='silicon.min.css'>
 		<link rel='canonical' href='https://silicon-css.com'/>
 	</head>
 	<body>
 		<div>
 			<header>
 				<h1>silicon</h1>
-				<code>1.2.4</code>
+				<code>1.2.5</code>
 
 				<h2>11kb classless CSS framework</h2>
 				<p>
@@ -79,12 +79,12 @@ SOFTWARE.
 				</p>
 			</header>
 
-			<section>
+			<section id='vp-widths'>
 				<p>silicon also has a light and dark mode that switches with the clients operating systems preference</p>
 
 				<p class='card'>
 					<span class='notice'>important information</span>
-					there are <u>3 page layouts</u>, <code>&lt;div class='vp-xs'&gt;</code>, <code>&lt;div class='vp-s'&gt;</code>, <code>&lt;div class='vp-m'&gt;</code>, and <code>&lt;div class='vp-l'&gt;</code>
+					there are <u>4 page layouts</u>, <code>&lt;div class='vp-xs'&gt;</code>, <code>&lt;div class='vp-s'&gt;</code>, <code>&lt;div class='vp-m'&gt;</code>, and <code>&lt;div class='vp-l'&gt;</code>
 					they each take up 20%, 30%, 50%, and 80% of the screen respectively on at least
 					<code>1920x1080</code> and slightly more on smaller displays, by default the <code>&lt;body&gt;</code> will use 30% of the screen,
 					these classes will up a portion of the actual screen/viewport.
@@ -263,6 +263,8 @@ SOFTWARE.
 				<p><code>&lt;button class='big'&gt;</code> gives more padding on the button to make it the same size as inputs.</p>
 				<p><code>&lt;div class='grid one / two / three / four / five'&gt;</code> creates a grid with a specified column count.</p>
 				<p><code>&lt;div class='grid gap'&gt;</code> adds the standard gap to the grid.</p>
+				<p><code>&lt;div class='vp-xs vp-s vp-m vp-l'&gt;</code> changes the width of the <code>&lt;div&gt;</code>, to set widths mentioned
+					<a href='#vp-widths'>here</a>.</p>
 			</div>
 		</div>
 		<footer>
