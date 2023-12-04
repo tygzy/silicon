@@ -1,4 +1,4 @@
-/* silicon v1.2.5 */
+/* silicon v1.2.7 */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap');
@@ -487,6 +487,10 @@ var {
 
 samp {
     font-weight: 800;
+}
+
+ul, ol {
+    padding-left: 1.2rem;
 }
 
 pre > code {
