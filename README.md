@@ -35,7 +35,7 @@ After downloading silicon, use this code snippet to use it:
 The standard (non-minified) version is also included with css variables at the top of the file 
 to allow some core level customization to colours, border width and other things.
 
-![light theme example](https://i.imgur.com/HC6gx2i.png)
+![light theme example](https://i.imgur.com/QRR2763.png)
 
-![dark theme example](https://i.imgur.com/YZ9IAYV.png)
+![dark theme example](https://i.imgur.com/WCJ6lGi.png)
 

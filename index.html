@@ -57,16 +57,21 @@ SOFTWARE.
 		<link rel='icon' type='image/icon' sizes='32x32' href='ico_32_dark.ico' media='(prefers-color-scheme: dark)'>
 		<link rel='icon' type='image/icon' sizes='64x64' href='ico_64_dark.ico' media='(prefers-color-scheme: dark)'>
 
-		<link rel='stylesheet' href='silicon.min.css'>
+		<link rel='stylesheet' href='silicon.css'>
 		<link rel='canonical' href='https://silicon-css.com'/>
 	</head>
 	<body>
 		<div>
 			<header>
+				<nav>
+					<a href='#styles'>Styles</a>
+					<a href='#classes'>Classes</a>
+					<a href='#ideas'>Style ideas</a>
+				</nav>
 				<h1>silicon</h1>
-				<code>1.2.8</code>
+				<code>1.2.9</code>
 
-				<h2>12kb classless CSS framework</h2>
+				<h2>13kb classless CSS framework</h2>
 				<p>
 					<a href='https://github.com/tygzy/silicon' target='_blank'>Github</a> /
 					<a href='/silicon.min.css' target='_blank'>Download</a> -
@@ -92,239 +97,292 @@ SOFTWARE.
 				</p>
 			</section>
 
-			<h2>Forms</h2>
-			<form action='/'>
-				<input type='text' placeholder='Text input'>
-				<textarea placeholder='Textarea' class='ve-resize'></textarea>
-				<select>
-					<option disabled selected>Select</option>
-					<option>Option</option>
-				</select>
-				<div>
-					<label for='input'>Label</label>
-					<input type='text' id='input' placeholder='Input with label'>
-				</div>
-				<div>
-					<label for='input_disabled'>Disabled input</label>
-					<input type='text' id='input_disabled' placeholder='Disabled input' disabled>
-				</div>
-				<div>
-					<label for='radio'>Radio</label>
-					<input type='radio' id='radio' name='radio' value='radio'>
-					<label for='radio_2'>Radio 2</label>
-					<input type='radio' id='radio_2' name='radio' value='radio_2'>
-				</div>
-				<div>
-					<label for='checkbox'>Checkbox</label>
-					<input type='checkbox' id='checkbox'>
-				</div>
-				<div>
-					<label for='range_input'>Range input</label>
-					<input type='range' id='range_input'>
-				</div>
-				<div>
-					<label for='color_input'>Color input</label>
-					<input type='color' value='#2c62af' id='color_input'>
-				</div>
-				<div>
-					<label for='file_input'>File input</label>
-					<input type='file' id='file_input'>
-				</div>
-				<input type='submit' value='Submit input'>
-			</form>
+			<h2 id='styles'>Forms</h2>
+			<main>
+				<form action='/'>
+					<input type='text' placeholder='Text input'>
+					<textarea placeholder='Textarea' class='ve-resize'></textarea>
+					<select>
+						<option disabled selected>Select</option>
+						<option>Option</option>
+					</select>
+					<div>
+						<label for='input'>Label</label>
+						<input type='text' id='input' placeholder='Input with label'>
+					</div>
+					<div>
+						<label for='input_disabled'>Disabled input</label>
+						<input type='text' id='input_disabled' placeholder='Disabled input' disabled>
+					</div>
+					<div>
+						<label for='radio'>Radio</label>
+						<input type='radio' id='radio' name='radio' value='radio'>
+						<label for='radio_2'>Radio 2</label>
+						<input type='radio' id='radio_2' name='radio' value='radio_2'>
+					</div>
+					<div>
+						<label for='checkbox'>Checkbox</label>
+						<input type='checkbox' id='checkbox'>
+					</div>
+					<div>
+						<label for='range_input'>Range input</label>
+						<input type='range' id='range_input'>
+					</div>
+					<div>
+						<label for='color_input'>Color input</label>
+						<input type='color' value='#2c62af' id='color_input'>
+					</div>
+					<div>
+						<label for='file_input'>File input</label>
+						<input type='file' id='file_input'>
+					</div>
+					<input type='submit' value='Submit input'>
+				</form>
 
-			<h4>Buttons</h4>
+				<h4>Buttons</h4>
 
-			<p>
-				<button type='button'>Button</button>
-				<button disabled>Disabled</button>
-				<button type='reset'>Reset</button>
-			</p>
+				<p>
+					<button type='button'>Button</button>
+					<button disabled>Disabled</button>
+					<button type='reset'>Reset</button>
+				</p>
 
-			<p>
-				<button type='button' class='big'>Big button</button>
-			</p>
+				<p>
+					<button type='button' class='big'>Big button</button>
+				</p>
 
 
-			<h2>Table</h2>
-			<table>
-				<caption>Caption (Standard table style)</caption>
-				<thead>
-					<tr>
-						<th>th1</th>
-						<th>th2</th>
-						<th>th3</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>td1</td>
-						<td>td2</td>
-						<td>td3</td>
-					</tr>
-					<tr>
-						<td>td1</td>
-						<td>td2</td>
-						<td>td3</td>
-					</tr>
-					<tr>
-						<td>td1</td>
-						<td>td2</td>
-						<td>td3</td>
-					</tr>
-				</tbody>
-			</table>
-			<p><code>&lt;table class='alternate'&gt;</code></p>
-			<table class='alternate'>
-				<caption>Caption (Alternate table style)</caption>
-				<thead>
-					<tr>
-						<th>th1</th>
-						<th>th2</th>
-						<th>th3</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>td1</td>
-						<td>td2</td>
-						<td>td3</td>
-					</tr>
-					<tr>
-						<td>td1</td>
-						<td>td2</td>
-						<td>td3</td>
-					</tr>
-					<tr>
-						<td>td1</td>
-						<td>td2</td>
-						<td>td3</td>
-					</tr>
-				</tbody>
-			</table>
+				<h2>Table</h2>
+				<table>
+					<caption>Caption (Standard table style)</caption>
+					<thead>
+						<tr>
+							<th>th1</th>
+							<th>th2</th>
+							<th>th3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+					</tbody>
+				</table>
+				<p><code>&lt;table class='alternate'&gt;</code></p>
+				<table class='alternate'>
+					<caption>Caption (Alternate table style)</caption>
+					<thead>
+						<tr>
+							<th>th1</th>
+							<th>th2</th>
+							<th>th3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+						<tr>
+							<td>td1</td>
+							<td>td2</td>
+							<td>td3</td>
+						</tr>
+					</tbody>
+				</table>
 
-			<h1>Header 1 </h1>
-			<h2>Header 2</h2>
-			<h3>Header 3</h3>
-			<h4>Header 4</h4>
-			<h5>Header 5</h5>
-			<h6>Header 6</h6>
+				<h1>Header 1 </h1>
+				<h2>Header 2</h2>
+				<h3>Header 3</h3>
+				<h4>Header 4</h4>
+				<h5>Header 5</h5>
+				<h6>Header 6</h6>
 
-			<h2>Inline tags</h2>
+				<h2>Inline tags</h2>
 
-			<h4>Keyboard</h4>
+				<h4>Keyboard</h4>
 
-			<p>
-				<kbd>ctrl</kbd> in case you want to show a keyboard shortcut
-			</p>
+				<p>
+					<kbd>CTRL + C</kbd> in case you want to show a keyboard shortcut
+				</p>
 
-			<h4>Code</h4>
+				<h4>Code</h4>
 
-			<p>
-				<code>print('hello world')</code> you might want to embed a snippet of code.
-				You can also use <code>&lt;code&gt;</code> inside a <code>&lt;pre&gt;</code> to get a code snippet spanning multiple lines.
-			</p>
-			<pre><code>example here</code></pre>
-			<samp>sample tag here</samp>
-			<p>Here is a <var>var</var> tag</p>
+				<p>
+					<code>print('hello world')</code> you might want to embed a snippet of code.
+					You can also use <code>&lt;code&gt;</code> inside a <code>&lt;pre&gt;</code> to get a code snippet spanning multiple lines.
+				</p>
+				<pre><code>Example here</code></pre>
+				<samp>Sample tag here</samp>
+				<p>Here is a <var>var</var> tag.</p>
 
-			<h2>Text highlighting</h2>
+				<h2>Text highlighting</h2>
 
-			<p>Here is an <ins>ins</ins> tag, here is a <del>del</del> tag, and here is a <mark>mark</mark> tag</p>
+				<p>Here is an <ins>ins</ins> tag, here is a <del>del</del> tag, and here is a <mark>mark</mark> tag</p>
 
-			<h2>Lists</h2>
+				<h2>Lists</h2>
 
-			<h4>Unordered list</h4>
-			<ul>
-				<li>List item 1</li>
-				<li>List item 2</li>
-				<li>List item 3</li>
-				<li>List item 4</li>
+				<h4>Unordered list</h4>
 				<ul>
-					<li>Embedded list item 1</li>
-					<li>Embedded list item 2</li>
-					<li>Embedded list item 3</li>
+					<li>List item 1</li>
+					<li>List item 2</li>
+					<li>List item 3</li>
+					<li>List item 4</li>
+					<ul>
+						<li>Embedded list item 1</li>
+						<li>Embedded list item 2</li>
+						<li>Embedded list item 3</li>
+					</ul>
 				</ul>
-			</ul>
 
-			<h4>Ordered list</h4>
-			<ol class='no-align'>
-				<li>List item 1</li>
-				<li>List item 2</li>
-				<li>List item 3</li>
-				<li>List item 4</li>
-				<ol>
-					<li>Embedded list item 1</li>
-					<li>Embedded list item 2</li>
-					<li>Embedded list item 3</li>
+				<h4>Ordered list</h4>
+				<ol class='no-align'>
+					<li>List item 1</li>
+					<li>List item 2</li>
+					<li>List item 3</li>
+					<li>List item 4</li>
+					<ol>
+						<li>Embedded list item 1</li>
+						<li>Embedded list item 2</li>
+						<li>Embedded list item 3</li>
+					</ol>
 				</ol>
-			</ol>
 
 
-			<h2>Blockquote</h2>
-			<blockquote>
-				This is a blockquote
-				<footer>author name, publication</footer>
-			</blockquote>
+				<h2>Blockquote</h2>
+				<blockquote>
+					This is a blockquote
+					<footer>Author name, Publication</footer>
+				</blockquote>
 
 
-			<h2>Details</h2>
+				<h2>Details</h2>
 
-			<details>
-				<summary>Details summary</summary>
-				<p>Details content</p>
-			</details>
+				<details>
+					<summary>Details summary</summary>
+					<p>Details content</p>
+				</details>
 
 
-			<h2>Aside</h2>
+				<h2>Aside</h2>
 
-			<aside>
-				<p>Some aside text</p>
-			</aside>
+				<aside>
+					<p>Some aside text</p>
+				</aside>
+			</main>
 
-			<h2>Classes</h2>
+			<article>
+				<h2 id='classes'>Classes</h2>
 
-			<p>These classes are not required in any way and are completely optional to use.</p>
+				<p class='card'>These classes are not required in any way and are completely optional to use.</p>
 
+				<br>
+
+				<div>
+					<p><code>&lt;* class='card'&gt;</code> a card with borders, could be used to separate content from something else.</p>
+					<p><code>&lt;* class='left / center / right'&gt;</code> aligns any text to the left / center / right.</p>
+					<p><code>&lt;* class='no-resize / all-resize / ho-resize / ve-resize'&gt;</code> allows or disallows a textarea to be resized in specified directions.</p>
+					<p><code>&lt;input / textarea / select class='small'&gt;</code> gives less padding on these elements to make them smaller.</p>
+					<p><code>&lt;button class='big'&gt;</code> gives more padding on the button to make it the same size as inputs.</p>
+					<p><code>&lt;table class='alternate'&gt;</code> uses the alternate table style (doesn't change anything with the layout).</p>
+					<p><code>&lt;* class='desktop-only'&gt;</code> only visible on desktop.</p>
+					<p><code>&lt;* class='mobile-only'&gt;</code> only visible on mobile.</p>
+					<h3>Notice cards</h3>
+					<ul>
+						<li><code>&lt;* class='notice'&gt;</code> creates a focal point with uppercase text and center alignment.</li>
+						<ul>
+							<li><code>&lt;* class='notice warning'&gt;</code> creates a danger/red card with otherwise same styling as a normal <code>notice</code>.</li>
+						</ul>
+					</ul>
+					<h3>Flexbox</h3>
+					<ul>
+						<li><code>&lt;* class='flex'&gt;</code> makes any element a flexbox with vertical and horizontal center alignment <strong>in a row</strong>.</li>
+						<ul>
+							<li><code>&lt;* class='flex column'&gt;</code> vertical and horizontal alignment <strong>in a column</strong>.</li>
+							<li><code>&lt;* class='flex wrap'&gt;</code> applies flex wrap to the element.</li>
+						</ul>
+					</ul>
+					<h3>Grids</h3>
+					<ul>
+						<li><code>&lt;div class='grid one / two / three / four / five'&gt;</code> creates a grid with a specified column count.</li>
+						<li><code>&lt;div class='grid gap'&gt;</code> adds the standard gap to the grid.</li>
+						<ul>
+							<li><code>&lt;div class='grid'&gt; &lt;* class='span c-2 / 3 / 4 / 5'&gt;&lt;/*&gt; &lt;/div&gt;</code> creates a grid item that spans multiple columns, going from 2 to 5.</li>
+							<li><code>&lt;div class='grid'&gt; &lt;* class='span r-2 / 3 / 4 / 5'&gt;&lt;/*&gt; &lt;/div&gt;</code> creates a grid item that spans multiple rows, going from 2 to 5.</li>
+							<li><strong>These grid span items are all reduced to 2 on mobile for responsive design.</strong></li>
+						</ul>
+					</ul>
+					<h3>Container widths and heights</h3>
+					<ul>
+						<li><code>&lt;* class='width-xs'&gt;</code> 20% viewport width</li>
+						<li><code>&lt;* class='width-s'&gt;</code> 30% viewport width</li>
+						<li><code>&lt;* class='width-m'&gt;</code> 50% viewport width</li>
+						<li><code>&lt;* class='width-l'&gt;</code> 80% viewport width</li>
+						<li><code>&lt;* class='width-xl'&gt;</code> 100% viewport width</li>
+						<li><code>&lt;* class='width-100'&gt;</code> 100% <strong>parent</strong> width</li>
+						<li><code>&lt;* class='height-100'&gt;</code> 100% <strong>parent</strong> height</li>
+						<li><code>&lt;* class='fullscreen'&gt;</code> 100% of the entire viewport (width and height)</li>
+					</ul>
+				</div>
+			</article>
 			<br>
-
-			<div>
-				<p><code>&lt;* class='card'&gt;</code> a card with borders, could be used to separate content from something else.</p>
-				<p><code>&lt;* class='left / center / right'&gt;</code> aligns any text to the left / center / right.</p>
-				<p><code>&lt;* class='no-resize / all-resize / ho-resize / ve-resize'&gt;</code> allows or disallows a textarea to be resized in specified directions.</p>
-				<p><code>&lt;input / textarea / select class='small'&gt;</code> gives less padding on these elements to make them smaller.</p>
-				<p><code>&lt;button class='big'&gt;</code> gives more padding on the button to make it the same size as inputs.</p>
-				<p><code>&lt;table class='alternate'&gt;</code> uses the alternate table style (doesn't change anything with the layout).</p>
-				<h3>Notice cards</h3>
-				<ul>
-					<li><code>&lt;* class='notice'&gt;</code> creates a focal point with uppercase text and center alignment.</li>
-					<ul>
-						<li><code>&lt;* class='notice warning'&gt;</code> creates a danger/red card with otherwise same styling as a normal <code>notice</code>.</li>
-					</ul>
-				</ul>
-				<h3>Flexbox</h3>
-				<ul>
-					<li><code>&lt;* class='flex'&gt;</code> makes any element a flexbox with vertical and horizontal center alignment <strong>in a row</strong>.</li>
-					<ul>
-						<li><code>&lt;* class='flex column'&gt;</code> vertical and horizontal alignment <strong>in a column</strong>.</li>
-					</ul>
-				</ul>
-				<h3>Grids</h3>
-				<ul>
-					<li><code>&lt;div class='grid one / two / three / four / five'&gt;</code> creates a grid with a specified column count.</li>
-					<li><code>&lt;div class='grid gap'&gt;</code> adds the standard gap to the grid.</li>
-				</ul>
-				<h3>Container widths</h3>
-				<ul>
-					<li><code>&lt;div class='width-xs'&gt;</code>: 20% viewport width</li>
-					<li><code>&lt;div class='width-s'&gt;</code>: 30% viewport width</li>
-					<li><code>&lt;div class='width-m'&gt;</code>: 50% viewport width</li>
-					<li><code>&lt;div class='width-l'&gt;</code>: 80% viewport width</li>
-					<li><code>&lt;div class='width-xl'&gt;</code>: 100% viewport width</li>
-					<li><code>&lt;* class='width-100'&gt;</code>: 100% <strong>parent</strong> width</li>
-					<li><code>&lt;* class='fullscreen'&gt;</code>: 100% of the entire viewport (width and height)</li>
-				</ul>
-			</div>
+			<section>
+				<h2 id='ideas'>Style ideas</h2>
+				<div>
+					<p>Here are some things you can create without the need for an extended list of classes.</p>
+					<h3>Grid of cards</h3>
+					<div class='grid three gap'>
+						<div class='card'>
+							Text 1
+						</div>
+						<div class='card'>
+							Text 2
+						</div>
+						<div class='card'>
+							Text 3
+						</div>
+					</div>
+<pre><code>&lt;div class='grid three gap'&gt;
+	&lt;div class='card'&gt; Text 1 &lt;/div&gt;
+	&lt;div class='card'&gt; Text 2 &lt;/div&gt;
+	&lt;div class='card'&gt; Text 2 &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					<h3>Bento grid</h3>
+					<div class='grid five gap'>
+						<div class='card span c-2'> Text 1 </div>
+						<div class='card'> Text 2</div>
+						<div class='card span c-2 r-2'> Text 3 </div>
+						<div class='card'> Text 4</div>
+						<div class='card span c-2'> Text 5 </div>
+					</div>
+<pre><code>&lt;div class='grid five gap'&gt;
+	&lt;div class='card <strong>span c-2</strong>'&gt; Text 1 &lt;/div&gt;
+	&lt;div class='card'&gt; Text 2 &lt;/div&gt;
+	&lt;div class='card <strong>span c-2 r-2</strong>'&gt; Text 3 &lt;/div&gt;
+	&lt;div class='card'&gt; Text 4 &lt;/div&gt;
+	&lt;div class='card <strong>span c-2</strong>'&gt; Text 5 &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				</div>
+				</div>
+			</section>
 		</div>
 		<footer>
 			<section>
