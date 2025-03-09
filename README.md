@@ -10,7 +10,7 @@ Visit https://silicon-css.com for a live preview of silicon on a website.
 
 ## Speed 
 
-Silicon is 12kb in size, making it a very fast css stylesheet to load, 
+Silicon is 13kb in size, making it a very fast css stylesheet to load, 
 so it won't slow down your page when loading the resources.
 
 - Standard version: `silicon.min.css`
